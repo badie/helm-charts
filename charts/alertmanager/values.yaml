@@ -18,7 +18,14 @@ image:
 # Full external URL where alertmanager is reachable, used for backlinks.
 baseURL: ""
 
+## Additional Alertmanager arguments
+# feature flags can be defined as a list. see example below
 extraArgs: {}
+  # enable-feature:
+  #   - utf8-strict-mode
+  #   - receiver-name-in-metrics
+  # log.level: debug
+  # log.format: json
 
 ## Additional Alertmanager Secret mounts
 # Defines additional mounts with secrets. Secrets must be manually created in the namespace.
